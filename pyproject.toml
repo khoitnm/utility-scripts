@@ -1,18 +1,20 @@
 [tool.poetry]
 name = "utility-scripts"
 version = "0.1.0"
-description = "utility-scripts"
+description = "Utility scripts for working with Gemini API and other tools"
+authors = ["Your Name <you@example.com>"]
 readme = "README.md"
 packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 pandas = "^2.2.2"
-google-generativeai = "^0.7.2"
 python-dotenv = "^1.0.1"
+google-genai = "1.30.0"   #  Updated to latest version
+pillow = "^10.4.0"
 
 [tool.poetry.scripts]
-generate-images = "src.utility_scripts.generate_car_parts_gemini_api:main"
+generate-car-parts = "utility_scripts.generate_car_parts_gemini_api.main:main"
 
 [build-system]
 requires = ["poetry-core"]
