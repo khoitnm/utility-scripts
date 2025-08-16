@@ -10,8 +10,13 @@ packages = [{ include = "src" }]
 python = "^3.10"
 pandas = "^2.2.2"
 python-dotenv = "^1.0.1"
-google-genai = "1.30.0"   #  Updated to latest version
 pillow = "^10.4.0"
+torch = "^2.3.0"
+transformers = "^4.43.3"
+diffusers = "^0.30.0"
+accelerate = "^0.34.0"
+safetensors = "^0.4.5"
+tqdm = "^4.66.4"
 
 [tool.poetry.scripts]
 generate-car-parts = "utility_scripts.generate_car_parts_gemini_api.main:main"
