@@ -1,0 +1,14 @@
+# Ruff configuration file
+line-length = 200
+
+[lint]
+select = ["E", "F", "W", "I", "UP", "B", "A", "C4", "T20", "SIM", "PTH", "NPY", "RUF"]
+# E701: Multiple statements on one line (colon) (use if statement on the same line)
+# E501: Line is too long
+# B007: Loop control variable `layer_name` not used within loop body (I disable it because I think sometimes it's convenient why the provided syntax)
+ignore = ["E701", "RUF015", "E501", "B007"]
+
+exclude = [
+    "**/tests/**",  # tests in any subdir
+]
+
